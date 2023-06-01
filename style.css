@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.backgroundSet{
+    height: 100vh;
+    width: 100%;
+    background-image: url(im2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 3%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    font-family: 'Audiowide', sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+}
+.topBar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.topBar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.topBar ul li a:hover{
+    color: rgb(219, 84, 84);
+    transition: .4s;
+}
