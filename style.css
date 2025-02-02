@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .backgroundSet{
     height: 100vh;
@@ -11,13 +12,22 @@
     background-position: center;
     background-size: cover;
 }
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent; /* Initially Transparent */
+    transition: background-color 0.3s ease-in-out;
+}
+.scrolled {
+    background-color: #181717; /* Dark background */
+}
 .topBar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 3%;
-    padding-right: 8%;
+    padding: 20px 3%;
+    
 }
 .logo{
     color: white;
@@ -95,12 +105,12 @@
     top: 6px;
 }
 
-.about{
+#about{
     width: 100%;
     padding: 100px 0px;
     background: #000;
 }
-.about img{
+#about img{
     height: auto;
     width: 430px;
 }
@@ -151,7 +161,7 @@ button:hover{
     cursor: pointer;
 }
 
-.service{
+#service{
     background: #101010;
     width: 100%;
     padding: 100px 0px;
@@ -214,7 +224,7 @@ button:hover{
     cursor: pointer;
 }
 
-.contactMe{
+#contactMe{
     width: 100%;
     height: 290px;
     background: #191919;
@@ -223,13 +233,13 @@ button:hover{
     justify-content: center;
     flex-direction: column;
 }
-.contactMe p{
+#contactMe p{
     color: white;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
-.contactMe .buttonContact{
+#contactMe .buttonContact{
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -239,7 +249,7 @@ button:hover{
     border-radius: 30px;
     transition: .4s;
 }
-.contactMe .buttonContact:hover{
+#contactMe .buttonContact:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
