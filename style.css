@@ -51,6 +51,12 @@ header{
     color: rgb(219, 84, 84);
     transition: .4s;
 }
+.hamburger{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
 .content{
     position: absolute;
     top: 50%;
@@ -296,4 +302,28 @@ footer p{
     color: #f9004d;
     bottom: 20%;
     font-size: 14px;
+}
+
+/* responsive */
+
+@media (max-width:786px){
+    .topBar ul{
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+        text-align: center;
+        padding: 10px 0;
+
+    }
+    .topBar ul.active {
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
 }
