@@ -314,6 +314,9 @@ footer p{
         background-image: url(imgMobile.jpg);
         /* background-color: gray; */
     }
+    header{
+        width: 91%;
+    }
     .topBar ul{
         display: none;
         flex-direction: column;
