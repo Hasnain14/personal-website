@@ -333,6 +333,9 @@ footer p{
     .hamburger{
         display: block;
     }
+    .newslatter form{
+        max-width: 80%;  
+    }
     .aboutMain{
         width: 100%;
         display: flex;
