@@ -315,7 +315,7 @@ footer p{
         /* background-color: gray; */
     }
     header{
-        width: 91%;
+        max-width: 91%;
     }
     .topBar ul{
         display: none;
